@@ -1,0 +1,108 @@
+\documentclass[ps1.tex]{subfiles}
+%\usepackage{enumerate}
+%\usepackage[left=3cm,right=3cm,bottom=3cm,top=2cm]{geometry}
+\begin{document}
+
+\section* {(25 points) Dimensional Analysis: Two Kinds of Quantum Gravity}
+\begin{enumerate}[(a)]
+\item \underline{Gravitational bound states}
+\noindent
+Consider a particle sitting on a table which is kept from floating away only by the
+force of gravity. This system is characterized by just three physical parameters,
+the mass of the particle, m, the acceleration of gravity on Earth, g = 9.8 $\frac {m}{s^2}$ , and
+Planck's constant, $\hbar = \frac {1}{2\pi}h$. The energy given by $E = 12 mv^2 + mgx$.
+\begin{enumerate}[i.]
+\item Using only dimensional analysis, find the product of powers of m, g, $\hbar$ which give a characteristic energy, E. (i.e., write $E =  m^{\alpha}g^{\beta}\hbar^{\gamma}$ and solve for $\alpha, \beta, \gamma)$ Can you find such a characteristic energy without using the Planck constant?
+\item Repeat to find characteristic length, time, and speeds (l, t, v) for this system
+\item Classically, putting the system in its lowest energy configuration $(E=0)$ would require 
+the particle to sit perfectly still $(v = 0)$ precisely on the surface $(x = 0)$. 
+Use the uncertainty relation, $\delta x \delta p \ge \frac {\hbar}{2}$ , to argue (briefly!) that the particle cannot have $E = 0$ while respecting the uncertainty principle. \\
+ASIDE: Quantum mechanically, then, there must be some minimum energy this system can have which cannot be predicted classically! For a particle on a table, this may not seem so important - but for Hydrogen, which you've just shown to be classically unstable, this is absolutely key. We will soon learn how to calculate the minimum ("ground state") energy of such systems.
+\item Use your dimensional analysis results to give a simple estimate for the ground state energy of this system. How does your estimate behave as $h \rightarrow 0$? Does this make sense? Explain why or why not.
+\item Evaluate $E, l, t $ and v numerically for a neutron $(m_N = 1.7*10^{27}kg)$. How high above the surface will the particle typically be found?
+\end{enumerate}
+
+\item \underline{The Planck Scale}
+\noindent
+The scale at which gravity (characterized by the Newton constant, $G_N$), 
+quantum mechanics ($\hbar$), and relativity (c) are all important is called the Planck scale.
+\begin{enumerate}[i.]
+\item Using dimensional analysis, find the combination of powers of $G_N, \hbar$ and $c$ which make a length - we call this the Planck length, $L_P$ .
+\item Evaluate $L_P$  numerically, and compare to a typical scale for nuclear or particle physics, namely $1F = 10^{-15}$ m.
+\item Repeat to find the Planck mass, $M_P$ , evaluate it numerically, and compare to the mass of a typical nuclear constituent (like the proton mass). Do we need to understand Quantum Gravity to study nuclear physics?
+\end{enumerate}
+\end{enumerate}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\begin{enumerate}[(a)]
+\item \mbox{} \\ 
+\noindent
+\begin{enumerate}[i.]
+\item $E \approx m^{\alpha}g^{\beta}\hbar^{\gamma}$
+
+$[kg]^1[m]^2[s]^{-2} = [kg]^{\alpha}[\frac {m}{s^2}]^{\beta}[\frac {kgm^2}{s}]^{\gamma}$
+
+so set up equations of exponents
+
+$kg  \rightarrow 1 = 1\alpha + 0\alpha + 1\alpha$\\
+$m  \rightarrow 2 = 0\beta + 1\beta + 2\beta$\\
+$sec  \rightarrow 1 = 1\gamma + 0\gamma + 1\gamma$\\
+
+solve simultaneous equations and this gives 
+$\alpha = \frac {1}{3}, \beta = \frac {2}{3}, \gamma = \frac {2}{3}$
+
+\item $l \approx m^{\alpha}g^{\beta}\hbar^{\gamma}$
+$[m] = [kg]^{\alpha}[\frac {m}{s^2}]^{\beta}[\frac {kgm^2}{s}]^{\gamma}$
+
+so set up equations of exponents
+
+$kg  \rightarrow 0 = 1\alpha + 0\alpha + 1\alpha$\\
+$m  \rightarrow 1 = 0\beta + 1\beta + 2\beta$\\
+$sec  \rightarrow 0 = 1\gamma + 0\gamma + 1\gamma$\\
+
+solve simultaneous equations and this gives 
+$\alpha = \frac {2}{3}, \beta = -\frac {1}{3}, \gamma = \frac {2}{3}$
+
+repeat for t $\rightarrow$
+$\alpha = -\frac {1}{3}, \beta = -\frac {2}{3}, \gamma = \frac {1}{3}$
+
+repeat for v $\rightarrow$
+$\alpha = -\frac {1}{3}, \beta = \frac {1}{3}, \gamma = \frac {1}{3}$\\
+
+\item If E= 0 requires V=0 and x=0, then $\delta x \delta p = 0$ which violates the uncertainty principle (note p = mv)
+
+\item from above using parameters for mass of electron and g
+\begin{center}
+$E \approx (mg^2\hbar^2)^{1/3} = (9.11*10^{-31}*(9.8)^2*(1.054*10^{-34})^2)^{1/3}$
+$ =  9.9*10^{-33} J = 6.18*10^{-14}eV$
+\end{center}
+
+note that the ground state energy for hydrogen is 13.6eV
+
+as $\hbar\rightarrow 0$ then $E\rightarrow 0$ as well.  As stated above E can never be exactly zero by the uncertainty principle so no this does not hold up.
+
+\item Substituting into the approximations above gives
+
+\begin{itemize}
+  \item [] $E = 1*10^{-12}$ eV
+  \item [] $l = 10*10^{-6}$ m
+  \item [] $t= 1*10^{-3}$ seconds 
+  \item [] $v = 0.01 \frac {m}{s}$
+\end{itemize}
+\end{enumerate}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\item \mbox{}\\
+\noindent
+\begin{enumerate}[i.]
+\item using same process as above $L_P =  \sqrt( \frac {\hbar G} {c^3} )$\\
+\item substituting in values to the last equations gives $L_P = 1.616*10^{-35}$ m\\
+\item using same process as above $M_P =  \sqrt( \frac {\hbar c} {G} ) = 2.18*10^{-8}$ kg\\
+
+length is much less than typical nuclear sizes and nuclear masses are much less than $M_P$ so no this is not a factor in nuclear physics.
+
+(anyone have any better ideas??)
+\end{enumerate}
+\end{enumerate}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+
+\end{document}
